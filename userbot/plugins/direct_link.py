@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 from humanize import naturalsize
 
 from userbot.utils import register
-from global_variables_sql import SYNTAX, MODULE_LIST
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 @register(outgoing=True, pattern=r"^.direct(?: |$)([\s\S]*)")
 async def direct_link_generator(request):
