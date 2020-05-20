@@ -1,6 +1,6 @@
 # PhoeniX UserBot
-# All thanks to Raphielgang/Paperplane, UniBorg, X-Tra-Telegram and Hardcore UserBots; which helped me to make PhoeniX UserBot.
-# Documentation/Guide, visit [How2Techy](https://how2techy.com/x-tra-userbot-plugin-guide-part1/)
+### All thanks to Raphielgang/Paperplane, UniBorg, X-Tra-Telegram and Hardcore UserBots; which helped me to make PhoeniX UserBot.
+## Documentation/Guide, visit [How2Techy](https://how2techy.com/x-tra-userbot-plugin-guide-part1/)
 # Installing
 Join https://t.me/XtraTgBot for updates and tuts
 ### The Recommended Way
