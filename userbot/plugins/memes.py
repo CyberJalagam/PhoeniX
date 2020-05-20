@@ -7,7 +7,7 @@
 
 """ Userbot module for having some fun with people. """
 
-from global_variables_sql import SYNTAX, MODULE_LIST
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 import asyncio
 import random
 import re
