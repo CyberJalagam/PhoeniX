@@ -5,7 +5,7 @@ Available Commands:
 .emoji :/
 .emoji -_-"""
 
-from global_variables_sql import SYNTAX, MODULE_LIST
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
 import asyncio
