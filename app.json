@@ -1,15 +1,15 @@
 {
-  "name": "X-tra Telegram",
-  "description": "Userbot created by a SNAPDRAGON and custom fork by ANUBIS\n\n join https://t.me/XtraTgChat for any problems or support",
-  "logo": "https://telegra.ph/file/1be6c59f53fef57b5745b.jpg",
+  "name": "PhoeniX",
+  "description": "Userbot created by mpSinGH\n\n PM @HawkEyesMohak for any query",
+  "logo": "https://telegra.ph/file/89bbe21a64228a8d7625b.jpg",
   "keywords": [
     "telegram",
     "userbot",
     "plugin",
-    "modular",
-    "productivity"
+    "modules",
+    "phoenix"
   ],
-  "repository": "https://github.com/Dark-Princ3/X-tra-Telegram/",
+  "repository": "https://github.com/Techy05/PhoeniX/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -23,11 +23,11 @@
       "required": false
     },
     "APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "Get this value from my.telegram.org!",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "Get this value from my.telegram.org!",
       "value": ""
     },
     "STRING_SESSION": {
@@ -36,7 +36,7 @@
     },
     "MAX_FLOOD_IN_P_M_s": {
       "description": "Maximum number of messages a person can send in pm before getting blocked. Value must be an integer. 3 by default.",
-      "value": "3",
+      "value": "4",
       "required": false
     },
     "OCR_SPACE_API_KEY": {
@@ -55,7 +55,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: Total-Noob-69/X-Tra-Telegram, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: Total-Noob/Phoenix, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },
@@ -65,9 +65,9 @@
       "required": false
     },
     "TG_BOT_TOKEN_BF_HER": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
+      "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the token of your bot. Worth it. Get it.",
       "value": "",
-      "required": false
+      "required": true
     },
     "CHROME_BIN": {
       "description": "For Carbon.py. Leave as it is. ",
@@ -82,7 +82,7 @@
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the username of your bot",
       "value": "",
-      "required": false
+      "required": true
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
