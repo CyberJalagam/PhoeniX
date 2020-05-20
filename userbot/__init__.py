@@ -92,11 +92,6 @@ if bool(ENV):
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
-
-    # Custom (forked) repo URL for updater.
-    UPSTREAM_REPO_URL = os.environ.get(
-        "UPSTREAM_REPO_URL",
-        "https://github.com/MPSinGH2005/X-tra-Telegram.git")
     
      # Quotes API key
     QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
@@ -116,7 +111,7 @@ if bool(ENV):
     # Youtube API key
     YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-    # Default .alive name
+    # Default alive name
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
     
     LESS_SPAMMY = os.environ.get("LESS_SPAMMY", True)
