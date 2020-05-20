@@ -5,7 +5,7 @@
 #
 """ Userbot module for purging unneeded messages(usually spam or ot). """
 
-from global_variables_sql import SYNTAX, MODULE_LIST
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 from asyncio import sleep
 from telethon import events
 from telethon.errors import rpcbaseerrors
