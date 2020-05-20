@@ -8,7 +8,7 @@ from telethon.tl import functions, types
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME
 from platform import uname
-from global_variables_sql import SYNTAX, MODULE_LIST
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 BOSS = str(ALIVE_NAME) if ALIVE_NAME else "**No Name set yet.** [Check Guide.](https://how2techy.com/xtra-guide1/)"
 
