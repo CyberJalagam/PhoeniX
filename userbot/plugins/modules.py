@@ -6,7 +6,7 @@ from telethon import events
 from userbot.utils import admin_cmd
 import asyncio
 from telethon.tl import functions, types
-from global_variables_sql import MODULE_LIST
+from sql.global_variables_sql import MODULE_LIST
 
 
 @borg.on(admin_cmd(pattern="modules ?(.*)"))
