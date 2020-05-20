@@ -16,7 +16,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 from userbot import HEROKU_API_KEY, HEROKU_APP_NAME, STRING_SESSION
 from userbot.events import register
-from global_variables_sql import SYNTAX, MODULE_LIST
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 
 async def gen_chlog(repo, diff):
@@ -39,7 +39,7 @@ async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
     await ups.edit("`Checking for updates, please wait....`")
     conf = ups.pattern_match.group(1)
-    off_repo = 'https://github.com/Techy05/XtraTG.git'
+    off_repo = 'https://github.com/Techy05/PhoeniX.git'
 
     try:
         txt = "`Oops.. Updater cannot continue due to "
@@ -166,10 +166,10 @@ async def upstream(ups):
         exit()
 
 
-MODULE_LIST.append("Software Updates")
+MODULE_LIST.append("software updates")
 
 SYNTAX.update({
-    "Software Updates": "\
+    "software updates": "\
 • `.update`\
 \nUsage: __Checks for OTA.__\
 \n\n• `.update now`\
