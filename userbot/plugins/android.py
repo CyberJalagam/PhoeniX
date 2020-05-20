@@ -5,7 +5,7 @@
 #
 """ Userbot module containing commands related to android"""
 
-from global_variables_sql import SYNTAX, MODULE_LIST
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 from telethon import events
 import re
 from requests import get
