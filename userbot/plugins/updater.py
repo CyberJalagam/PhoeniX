@@ -51,7 +51,7 @@ async def upstream(ups):
     await ups.edit("`Checking for updates, please wait....`")
     conf = ups.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
-    force_update = True
+    force_update = False
 
     try:
         txt = "`Oops.. Updater cannot continue due to "
@@ -81,7 +81,7 @@ async def upstream(ups):
         repo.heads.master.checkout(True)
 
     ac_br = repo.active_branch.name
-    if ac_br != ['master', 'Advanced']:
+    if ac_br != 'master':
         await ups.edit(
             f'**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). '
             'in that case, Updater is unable to identify '
