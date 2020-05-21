@@ -4,7 +4,7 @@
 # Syntax (.save <notename>, .get <notename>, .clear <notename>, .clearall)
 
 from sql.global_variables_sql import SYNTAX, MODULE_LIST
-from userbot.notes_sql import get_notes, rm_note, add_note, rm_all_notes
+from sql.notes_sql import get_notes, rm_note, add_note, rm_all_notes
 from telethon import events
 from userbot.utils import admin_cmd
 import asyncio, time
