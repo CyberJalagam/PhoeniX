@@ -29,8 +29,6 @@ from cowpy import cow
 from userbot import CMD_HELP,YOUTUBE_API_KEY
 from userbot.utils import register
 
-from global_variables_sql import SYNTAX, MODULE_LIST
-
 # ================= CONSTANT =================
 RENDISTR = [
     "`I Know Uh ez Rendi Bhay Dont show Your Randi Pesa Here`",
