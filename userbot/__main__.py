@@ -60,7 +60,7 @@ for name in files:
 
 import userbot._core
 
-print("Yay your userbot is working properly. Now enjoy my master")
+print("Deploying Successful! Enjoy the magic of PhoeniX :)")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
