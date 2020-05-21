@@ -95,7 +95,9 @@ if bool(ENV):
     HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "False"))
     
     # Custom (forked) repo URL for updater.
-    UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", None)
+    UPSTREAM_REPO_URL = os.environ.get(
+        "UPSTREAM_REPO_URL",
+        "https://github.com/Techy05/PhoeniX.git")
     
     # Quotes API key
     QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
