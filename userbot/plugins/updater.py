@@ -16,6 +16,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 from userbot import HEROKU_API_KEY, HEROKU_APP_NAME, STRING_SESSION
 from userbot.events import register
+from sql.global_variables_sql import SYNATX, MODULE_LIST
 
 
 async def gen_chlog(repo, diff):
