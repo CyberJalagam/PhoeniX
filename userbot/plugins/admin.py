@@ -6,6 +6,7 @@
 Userbot module to help you manage a group
 """
 
+import time
 from asyncio import sleep
 from os import remove
 from telethon import events
@@ -20,6 +21,7 @@ from telethon.errors import (BadRequestError, ChatAdminRequiredError,
 from telethon.errors.rpcerrorlist import (UserIdInvalidError,
                                           MessageTooLongError)
 from telethon.tl.functions.channels import (EditAdminRequest,
+                                            LeaveChannelRequest,
                                             EditBannedRequest,
                                             EditPhotoRequest)
 from telethon.tl.functions.messages import UpdatePinnedMessageRequest
@@ -27,7 +29,9 @@ from telethon.tl.types import (ChannelParticipantsAdmins, ChatAdminRights,
                                ChatBannedRights, MessageEntityMentionName,
                                MessageMediaPhoto)
 
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot 
+from userbot import BOTLOG, BOTLOG_CHATID, bot 
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
+
 from userbot.utils import register, errors_handler, admin_cmd
 
 # =================== CONSTANT ===================
@@ -491,7 +495,18 @@ async def kick(usr):
             f"USER: [{user.first_name}](tg://user?id={user.id})\n"
             f"CHAT: {usr.chat.title}(`{usr.chat_id}`)\n")
 
-
+        
+@borg.on(admin_cmd("kickme", outgoing=True))
+async def leave(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("`I am leaving this group.....!`")
+        time.sleep(3)
+        if '-' in str(e.chat_id):
+            await borg(LeaveChannelRequest(e.chat_id))
+        else:
+            await e.edit('`Sir This is Not A Group`')
+            
+            
 @register(outgoing=True, pattern="^.users ?(.*)")
 @errors_handler
 async def get_users(show):
@@ -582,31 +597,36 @@ async def get_user_from_id(user, event):
 
     return user_obj
 
-
-CMD_HELP.update({
-    "admin":
-    ".promote <username/reply> <custom rank (optional)>\
-\nUsage: Provides admin rights to the person in the chat.\
-\n\n.demote <username/reply>\
-\nUsage: Revokes the person's admin permissions in the chat.\
-\n\n.ban <username/reply> <reason (optional)>\
-\nUsage: Bans the person off your chat.\
-\n\n.unban <username/reply>\
-\nUsage: Removes the ban from the person in the chat.\
-\n\n.mute <username/reply> <reason (optional)>\
-\nUsage: Mutes the person in the chat, works on admins too.\
-\n\n.unmute <username/reply>\
-\nUsage: Removes the person from the muted list.\
-\n\n.gmute <username/reply> <reason (optional)>\
-\nUsage: Mutes the person in all groups you have in common with them.\
-\n\n.ungmute <username/reply>\
-\nUsage: Reply someone's message with .ungmute to remove them from the gmuted list.\
-\n\n.delusers\
-\nUsage: Searches for deleted accounts in a group. Use .delusers clean to remove deleted accounts from the group.\
-\n\n.admins\
-\nUsage: Retrieves a list of admins in the chat.\
-\n\n.users or .users <name of member>\
-\nUsage: Retrieves all (or queried) users in the chat.\
-\n\n.setgppic <reply to image>\
-\nUsage: Changes the group's display picture."
+MODULE_LIST.append("admin")
+SYNTAX.update({
+    "admin": "\
+• `.promote <username/reply> <custom rank (optional)>`\
+\nUsage: __Provides admin rights to the person in the chat.__\
+\n\n• `.demote <username/reply>`\
+\nUsage: __Revokes the person's admin permissions in the chat.__\
+\n\n• `.ban <username/reply> <reason (optional)>`\
+\nUsage: __Bans the person off your chat.__\
+\n\n• `.unban <username/reply>`\
+\nUsage: __Removes the ban from the person in the chat.__\
+\n\n• `.mute <username/reply> <reason (optional)>`\
+\nUsage: __Mutes the person in the chat, works on admins too.__\
+\n\n• `.unmute <username/reply>`\
+\nUsage: __Removes the person from the muted list.__\
+\n\n• `.gmute <username/reply> <reason (optional)>`\
+\nUsage: __Mutes the person in all groups you have in common with them.\
+\n\n• `.ungmute <username/reply>`\
+\nUsage: __Reply someone's message with .ungmute to remove them from the gmuted list.__\
+\n\n• `.kick`\
+\nUsage: __Kick a particular member__\
+\n\n• `.kickme`\
+\nUsage: __Kicks yourself from the group__\
+\n\n• `.delusers`\
+\nUsage: __Searches for deleted accounts in a group. Use .delusers clean to remove deleted accounts from the group.__\
+\n\n• `.admins`\
+\nUsage: __Retrieves a list of admins in the chat.__\
+\n\n• `.users or .users <name of member>`\
+\nUsage: __Retrieves all (or queried) users in the chat.__\
+\n\n• `.setgppic <reply to image>`\
+\nUsage: __Changes the group's display picture.__\
+"
 })
