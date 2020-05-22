@@ -9,6 +9,7 @@ Available Commands:
 import asyncio
 import re
 import userbot.plugins.sql_helper.blacklist_sql as sql
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 from telethon import events, utils
 from telethon.tl import types, functions
 from userbot.utils import admin_cmd
@@ -73,3 +74,19 @@ async def on_delete_blacklist(event):
         if sql.rm_from_blacklist(event.chat_id, trigger.lower()):
             successful += 1
     await event.edit(f"Removed {successful} / {len(to_unblacklist)} from the blacklist")
+
+MODULE_LIST.append("blacklist")
+
+SYNTAX.update({
+    "blacklist": "\
+**Requested Module --> Blacklist**\
+\n\n• `.addblacklist <word/phrase/link>`\
+\nUsage: __Add a word/phrase/link in blacklist. That word/phrase/link will be deleted automatically__\
+\n\n• `.rmblacklist`\
+\nUsage: __Removes a word/phrase/link from blacklist.__\
+\n\n• `.listblacklist`\
+\nUsage: __Lists the blacklisted words/phrases/links__\
+\n\n__Blacklist is used to delete the messages which contain the <blacklisted word>.__\
+\nThis may cause heavy dynos usage. I'll recommend you to use any Group Management Bot
+"
+})
