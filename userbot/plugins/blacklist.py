@@ -87,6 +87,6 @@ SYNTAX.update({
 \n\n• `.listblacklist`\
 \nUsage: __Lists the blacklisted words/phrases/links__\
 \n\n__Blacklist is used to delete the messages which contain the <blacklisted word>.__\
-\nThis may cause heavy dynos usage. I'll recommend you to use any Group Management Bot
+\nThis may cause heavy dynos usage. Better use a Group Management Bot\
 "
 })
