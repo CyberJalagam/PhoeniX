@@ -68,8 +68,8 @@ async def upstream(ups):
     except InvalidGitRepositoryError as error:
         if conf != "now":
             await ups.edit(
-                f"`Unfortunately, the directory {error} does not seem to be a git repository.\
-            \nBut we can fix that by force updating the userbot using .update now.`"
+                f"Unfortunately, the directory {error} does not seem to be a git repository.\
+            \n__But we can fix that by force updating the userbot using__ `.update now`"
             )
             return
         repo = Repo.init()
@@ -81,7 +81,7 @@ async def upstream(ups):
         repo.heads.master.checkout(True)
 
     ac_br = repo.active_branch.name
-    if ac_br != 'Vanilla':
+    if ac_br != 'master':
         await ups.edit(
             f'**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). '
             'in that case, Updater is unable to identify '
@@ -189,9 +189,9 @@ MODULE_LIST.append("PhoeniX Updater")
 SYNTAX.update({
     "PhoeniX Updater": "\
 **PhoeniX Updater**\
-\n\n `.update`\
+\n\n• `.update`\
 \nUsage: __Checks for OTA update.__\
-\n\n `.update now`\
+\n\n• `.update now`\
 \nUsage: __Downloads and Installs the OTA update.__\
 "
 })
