@@ -13,21 +13,22 @@ import random
 import re
 import time
 
-from telethon import events
-
 from collections import deque
-
-from userbot.utils import admin_cmd
-
+from cowpy import cow
 import requests
+from platform import uname
 
+from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
+from telethon.tl.types import ChannelParticipantsAdmins
 
-from cowpy import cow
-
-from userbot import CMD_HELP,YOUTUBE_API_KEY
+from userbot.utils import admin_cmd
+from userbot import YOUTUBE_API_KEY
 from userbot.utils import register
+from userbot import ALIVE_NAME
+
+BOSS = str(ALIVE_NAME) if ALIVE_NAME else "**No Name set yet.** [Check Guide.](https://how2techy.com/xtra-guide1/)"
 
 # ================= CONSTANT =================
 RENDISTR = [
@@ -878,7 +879,7 @@ async def vapor(vpr):
 @register(outgoing=True, pattern="^.repo$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Click [here](https://github.com/MPSinGH2005/X-tra-Telegram) to open this lit af repo.")
+        await e.edit("Click [here](https://github.com/Techy05/PhoeniX) to open this lit af repo.")
 			  
 			  
 @register(outgoing=True, pattern="^.stretch(?: |$)(.*)")
@@ -958,17 +959,7 @@ async def killing (killed):
         if await killed.get_reply_message():
             await killed.edit(
                 "`Targeted user killed by Headshot 😈......`\n"
-		"Respect +9\n"
-            )
-			  
-@register(outgoing=True, pattern="^.bt$")
-async def bluetext(bte):
-    """ Believe me, you will find this useful. """
-    if not bte.text[0].isalpha() and bte.text[0] not in ("/", "#", "@", "!"):
-        if await bte.get_reply_message():
-            await bte.edit(
-                "`BLUETEXT MUST CLICK.`\n"
-                "`Are you a stupid animal which is attracted to colours?`"
+		f"Respect +9 for {BOSS}\n"
             )
 			  
 @register(outgoing=True, pattern="^.rape$")
@@ -1338,7 +1329,7 @@ async def typewriter(typew):
             await typew.edit("`Give a command to execute!`")
             return
         sleep_time = 0.008
-        typing_symbol = "▰"
+        typing_symbol = "_"
         old_text = ''
         await typew.edit(typing_symbol)
         await asyncio.sleep(sleep_time)
@@ -1358,81 +1349,81 @@ SYNTAX.update({
 **A page of Dictionary for memes module**\
 \n\n```.cowsay```\
 \nUsage: cow which says things.\
-\n\n```.milksay```\
+\n\n• ```.milksay```\
 \nUsage: Weird Milk that can speak\
-\n\n```.:/```\
+\n\n• ```.:/```\
 \nUsage: Check yourself ;)\
-\n\n```.-_-```\
+\n\n• ```.-_-```\
 \nUsage: Ok...\
-\n\n```.;_;```\
+\n\n• ```.;_;```\
 \nUsage: Like `-_-` but crying.\
-\n\n```.cp```\
+\n\n• ```.cp```\
 \nUsage: Copypasta the famous meme\
-\n\n```.vapor```\
+\n\n• ```.vapor```\
 \nUsage: Vaporize everything!\
-\n\n```.stretch```\
+\n\n• ```.stretch```\
 \nUsage: Stretch it.\
-\n\n```.wheelchair```\
+\n\n• ```.wheelchair```\
 \nUsage: Brings out the emoji of wheelchair. !!\
-\n\n```.zal```\
+\n\n• ```.zal```\
 \nUsage: Invoke the feeling of chaos.\
-\n\n```.moon```\
+\n\n• ```.moon```\
 \nUsage: kensar moon animation.\
-\n\n```.clock```\
+\n\n• ```.clock```\
 \nUsage: kensar clock animation.\
-\n\n```.earth```\
+\n\n• ```.earth```\
 \nUsage: kensar earth animation.\
-\n\n```.hi```\
+\n\n• ```.hi```\
 \nUsage: Greet everyone!\
-\n\n```.coinflip <heads/tails>```\
+\n\n• ```.coinflip <heads/tails>```\
 \nUsage: Flip a coin !!\
-\n\n```.owo```\
+\n\n• ```.owo```\
 \nUsage: UwU\
-\n\n```.react```\
+\n\n• ```.react```\
 \nUsage: Make your userbot react to everything.\
-\n\n```.slap```\
+\n\n• ```.slap```\
 \nUsage: reply to slap them with random objects !!\
-\n\n```.cry```\
+\n\n• ```.cry```\
 \nUsage: y u du dis, i cri.\
-\n\n```.shruggie```\
+\n\n• ```.shruggie```\
 \nUsage: Shrug at it !!\
-\n\n```.runs```\
+\n\n• ```.runs```\
 \nUsage: Run, run, RUNNN! [`.disable runs`: disable | `.enable runs`: enable]\
-\n\n```.metoo```\
+\n\n• ```.metoo```\
 \nUsage: Haha yes\
-\n\n```.mock```\
+\n\n• ```.mock```\
 \nUsage: Do it and find the real fun.\
-\n\n```.clap```\
+\n\n• ```.clap```\
 \nUsage: Praise people!\
-\n\n```.f <emoji/character>```\
+\n\n• ```.f <emoji/character>```\
 \nUsage: Pay Respects.\
-\n\n```.bt```\
+\n\n• ```.bt```\
 \nUsage: Believe me, you will find this useful.\
-\n\n```.smk <text/reply>```\
+\n\n• ```.smk <text/reply>```\
 \nUsage: A shit module for ツ , who cares.\
-\n\n```.type <text>```\
+\n\n• ```.type <text>```\
 \nUsage: Just a small command to make your keyboard become a typewriter!\
-\n\n```.cmd <text>```\
+\n\n• ```.cmd <text>```\
 \nUsage: Just a small command to make your keyboard become a terminal!\
-\n\n```.lfy <query>```\
+\n\n• ```.lfy <query>```\
 \nUsage: Let me Google that for you real quick !!\
-\n\n```.decide```\
+\n\n• ```.decide```\
 \nUsage: Make a quick decision.\
-\n\n```.abusehard```\
+\n\n• ```.abusehard```\
 \nUsage: You already got that! Ain't?.\
-\n\n```.chu```\
+\n\n• ```.chu```\
 \nUsage: Incase, the person infront of you is....\
-\n\n```.fuk```\
+\n\n• ```.fuk```\
 \nUsage: The onlu word that can be used fucking everywhere.\
-\n\n```.thanos```\
+\n\n• ```.thanos```\
 \nUsage: Try and then Snap.\
-\n\n```.noob```\
+\n\n• ```.noob```\
 \nUsage: Whadya want to know? Are you a NOOB?\
-\n\n```.pro```\
+\n\n• ```.pro```\
 \nUsage: If you think you're pro, try this.\
-\n\n```.abuse```\
+\n\n• ```.abuse```\
 \nUsage: Protects you from unwanted peeps.\
-\n\n```.repo```\
+\n\n• ```.repo```\
 \nUsage: A link to this Powerful Bot's Repo.\
 "
 })
