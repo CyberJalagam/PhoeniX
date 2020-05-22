@@ -118,9 +118,8 @@ async def upstream(ups):
             return
 
         await ups.edit(
-            "`Heroku configuration found! Updater will try to update and restart PhoeniX"
-            "automatically if succeeded. Try checking if PhoeniX is alive by using the"
-            "\".alive\" command after a few minutes.`")
+            "`Updating PhoeniX to the latest version...`"
+            "ETA: __5 minutes__")
         if not STRING_SESSION:
             repo.git.add('userbot.session', force=True)
         if path.isfile('config.env'):
@@ -155,9 +154,9 @@ async def upstream(ups):
     else:
         # Heroku configs not set, just restart the bot
         await ups.edit(
-            '`Successfully Updated!\n'
-            'PhoeniX is restarting... Wait for a few seconds, then '
-            'check if PhoeniX is alive by using the ".ping" command.`')
+            '`Successfully Updated ✅\n'
+            'PhoeniX is restarting...`\n\n'
+            '__If bot does not work, then check LOGS on Heroku__')
 
         await ups.client.disconnect()
         # Spin a new instance of bot
@@ -170,10 +169,10 @@ MODULE_LIST.append("PhoeniX Updater")
 
 SYNTAX.update({
     "PhoeniX Updater": "\
-**PhoeniX Updater**\
-\n\n `.update`\
+**PhoeniX Updater** ✨\
+\n\n• `.update`\
 \nUsage: __Checks for OTA update.__\
-\n\n `.update now`\
+\n\n• `.update now`\
 \nUsage: __Downloads and Installs the OTA update.__\
 "
 })
