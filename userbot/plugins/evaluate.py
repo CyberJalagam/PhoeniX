@@ -13,8 +13,8 @@ import io
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd("eval", allow_sudo=True))
-@borg.on(admin_cmd("eval"))
+@borg.on(admin_cmd("evaluate", allow_sudo=True))
+@borg.on(admin_cmd("evaluate"))
 async def _(event):
     if event.fwd_from:
         return
