@@ -1101,6 +1101,16 @@ async def _(event):
 		    await event.edit("".join(deq))
 		    deq.rotate(1)
 
+@borg.on(events.NewMessage(pattern=r"\.earth", outgoing=True))
+async def _(event):
+	if event.fwd_from:
+		return
+	deq = deque(list("🌏🌍🌎🌎🌍🌏🌍🌎"))
+	for _ in range(48):
+		await asyncio.sleep(0.1)
+		await event.edit("".join(deq))
+		deq.rotate(1)
+    
 @register(outgoing=True, pattern="^.clock$")
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
@@ -1371,6 +1381,8 @@ SYNTAX.update({
 \nUsage: kensar moon animation.\
 \n\n• ```.clock```\
 \nUsage: kensar clock animation.\
+\n\n• ```.solarsystem```\
+\nUsage: kensar solar system animation.\
 \n\n• ```.earth```\
 \nUsage: kensar earth animation.\
 \n\n• ```.hi```\
