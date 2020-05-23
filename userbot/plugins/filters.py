@@ -11,6 +11,7 @@ import re
 from telethon import events, utils
 from telethon.tl import types
 from userbot.plugins.sql_helper.filter_sql import get_filter, add_filter, remove_filter, get_all_filters, remove_all_filters
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 
 DELETE_TIMEOUT = 0
@@ -125,3 +126,18 @@ async def on_snip_delete(event):
 async def on_all_snip_delete(event):
     remove_all_filters(event.chat_id)
     await event.edit(f"filters **in current chat** deleted successfully")
+
+MODULE_LIST.append("filters")
+SYNTAX.update({
+    "filters": "\
+**Requested Module --> Filters**\
+\n\n• `.savefilter`\
+\nUsage: __Saves a filter in the current chat__\
+\n\n• `.listfilters`\
+\nUsage: __Lists all the filters in the current chat.__\
+\n\n• `.clearfilter`\
+\nUsage: __Removes a filter in the current chat.__\
+\n\n• `.clearallfilters`\
+\nUsage: __Removes all the filters in the current chat.__\
+"
+})
