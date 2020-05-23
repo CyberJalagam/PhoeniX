@@ -2,9 +2,10 @@ from telethon import events
 import asyncio
 from userbot.utils import admin_cmd
 from telethon.errors.rpcerrorlist import MessageIdInvalidError
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 
-@borg.on(admin_cmd(pattern="dump ?(.*)"))
+@borg.on(admin_cmd(pattern="bin ?(.*)"))
 async def _(message):
     try:
         obj = message.pattern_match.group(1)
@@ -21,8 +22,18 @@ async def _(message):
     f[:i] + (s * 2 + s * f.count(''), o, f[i], t), f[:i] + (s * 3 + s * f.count(''), o, t),
     f[:i] + (s * 3 + s * f.count(''), g, t))] for i, f in enumerate(reversed(h)))]):
         for something_else in something:
-            await asyncio.sleep(0.3)
+            await asyncio.sleep(0.2)
             try:
                 await message.edit(something_else)
             except MessageIdInvalidError:
                 return
+
+
+MODULE_LIST.append("dustbin")
+SYNTAX.update({
+    "dustbin": "\
+**Requested Module --> Dump into Dustbin**\
+\n\n• `.bin`\
+\nUsage: __Dump food into the bin.__\
+"
+})
