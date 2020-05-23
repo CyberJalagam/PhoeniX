@@ -36,7 +36,9 @@ ascii = {
     "dislike": "███████▄▄███████████▄\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀░░█░░░░██████▀\n░░░░░░░░░█░░░░█\n░░░░░░░░░░█░░░█\n░░░░░░░░░░░█░░█\n░░░░░░░░░░░█░░█\n░░░░░░░░░░░░▀▀ ",
     "music": "╔══╗ \n║██║ \n║(O)║♫ ♪ ♫ ♪\n╚══╝\n▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █\n\nVol- --------------------------● Vol+ ",
     "chess": "♜♞♝♚♛♝♞♜\n♟♟♟♟♟♟♟♟\n▓░▓░▓░▓░\n░▓░▓░▓░▓\n▓░▓░▓░▓░\n░▓░▓░▓░▓\n♙♙♙♙♙♙♙♙\n♖♘♗♔♕♗♘♖ ",
-    "shitos": "╭━━━┳╮╱╱╭╮╱╭━━━┳━━━╮\n┃╭━╮┃┃╱╭╯╰╮┃╭━╮┃╭━╮┃\n┃╰━━┫╰━╋╮╭╯┃┃╱┃┃╰━━╮\n╰━━╮┃╭╮┣┫┃╱┃┃╱┃┣━━╮┃\n┃╰━╯┃┃┃┃┃╰╮┃╰━╯┃╰━╯┃\n╰━━━┻╯╰┻┻━╯╰━━━┻━━━╯ "
+    "shitos": "╭━━━┳╮╱╱╭╮╱╭━━━┳━━━╮\n┃╭━╮┃┃╱╭╯╰╮┃╭━╮┃╭━╮┃\n┃╰━━┫╰━╋╮╭╯┃┃╱┃┃╰━━╮\n╰━━╮┃╭╮┣┫┃╱┃┃╱┃┣━━╮┃\n┃╰━╯┃┃┃┃┃╰╮┃╰━╯┃╰━╯┃\n╰━━━┻╯╰┻┻━╯╰━━━┻━━━╯ ",
+    "qrcode": "█▀▀▀▀▀█░▀▀░░░█░░░░█▀▀▀▀▀█\n█░███░█░█▄░█▀▀░▄▄░█░███░█\n█░▀▀▀░█░▀█▀▀▄▀█▀▀░█░▀▀▀░█\n▀▀▀▀▀▀▀░▀▄▀▄▀▄█▄▀░▀▀▀▀▀▀▀\n█▀█▀▄▄▀░█▄░░░▀▀░▄█░▄▀█▀░▀\n░█▄▀░▄▀▀░░░▄▄▄█░▀▄▄▄▀▄▄▀▄\n░░▀█░▀▀▀▀▀▄█░▄░████ ██▀█▄\n▄▀█░░▄▀█▀█▀░█▄▀░▀█▄██▀░█▄\n░░▀▀▀░▀░█▄▀▀▄▄░▄█▀▀▀█░█▀▀\n█▀▀▀▀▀█░░██▀█░░▄█░▀░█▄░██\n█░███░█░▄▀█▀██▄▄▀▀█▀█▄░▄▄\n█░▀▀▀░█░█░░▀▀▀░█░▀▀▀▀▄█▀░\n▀▀▀▀▀▀▀░▀▀░░▀░▀░░░▀▀░▀▀▀▀` ",
+    "youjoined": "━━━━━┓ \n┓┓┓┓┓┃\n┓┓┓┓┓┃　ヽ○ノ ⇦ Me When \n┓┓┓┓┓┃.      /　        You Joined\n┓┓┓┓┓┃  ノ) \n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃\n┓┓┓┓┓┃ "
 }
 
 unpacked_ascii = ""
@@ -118,9 +120,9 @@ SYNTAX.update({
 \n\n**Detailed usage of fuction(s):**\
 \nUsage: Just some funny little animations ;)\
 \n\n__List of reactions:__\
-\n.oof\
-\n.sed\
-\n.hek\
+\n• `.oof`\
+\n• `.sed`\
+\n• `.hek`\
 "
 })
 
@@ -128,9 +130,9 @@ SYNTAX.update({
     "emojis": f"\
 **Requested Module --> emojis**\
 \n\n**Detailed usage of fuction(s):**\
-\n\n.emoji `<emoji_name>`\
-\nUsage: Prints the target emoji.\
-\n\n__List of included emoji(s):__\
+\n\n• .emoji `<emoji_name>`\
+\nUsage: __Prints the target emoji.__\
+\n\nList of included emoji(s):\
 \n{unpacked_emojis}\
 "
 })
@@ -139,12 +141,14 @@ SYNTAX.update({
     "ascii": f"\
 **Requested Module --> ascii**\
 \n\nDetailed usage of fuction(s):\
-\n\n.ascii <art_name>\
-\nUsage: Prints the target ascii art.\
+\n\n• `.ascii <art_name>`\
+\nUsage: __Prints the target ascii art.__\
 \n\nList of included ASCII arts:\
-\nmf  __(Middle Finger)__\
-\ndislike  __(I hate it, boo)__\
-\nchess  __(Try playing chess!)__\
-\nshitos  __(Official logo for ShitOS)__ :P\
+\n mf  __(Middle Finger)__\
+\n dislike  __(I hate it, boo)__\
+\n chess  __(Try playing chess!)__\
+\n shitos  __(Official logo for ShitOS)__ :P
+\n qrcode  __Scan the QR Code from the UPI app__\
+\n youjoined  __You joined? I.... :)__\
 "
 })
