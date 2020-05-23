@@ -78,7 +78,7 @@ async def _(event):
 
 
 
-@borg.on(events.NewMessage(pattern=r"(.hack)", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 
 async def _(event):
 
@@ -133,9 +133,10 @@ MODULE_LIST.append("hack")
 
 SYNTAX.update({
     "hack": "\
-```.hack``` (as a reply to message)\
-\nUsage: Hacks the Telegram account of the targeted user.\
-\n\n```.gmailhack``` (as a reply to message)\
-\nUsage: Hacks the Google account of the targeted user.\
+**Special Prank module for Hacking**\
+\n\n• ```.hack``` (as a reply to message)\
+\nUsage: __Hacks the Telegram account of the targeted user.__\
+\n\n• ```.gmailhack``` (as a reply to message)\
+\nUsage: __Hacks the Google account of the targeted user.__\
 "
 })
