@@ -600,7 +600,8 @@ async def get_user_from_id(user, event):
 MODULE_LIST.append("admin")
 SYNTAX.update({
     "admin": "\
-• `.promote <username/reply> <custom rank (optional)>`\
+**Detailed usage of Function(s) in Admin module -->**\
+\n\n• `.promote <username/reply> <custom rank (optional)>`\
 \nUsage: __Provides admin rights to the person in the chat.__\
 \n\n• `.demote <username/reply>`\
 \nUsage: __Revokes the person's admin permissions in the chat.__\
@@ -613,7 +614,7 @@ SYNTAX.update({
 \n\n• `.unmute <username/reply>`\
 \nUsage: __Removes the person from the muted list.__\
 \n\n• `.gmute <username/reply> <reason (optional)>`\
-\nUsage: __Mutes the person in all groups you have in common with them.\
+\nUsage: __Mutes the person in all groups you have in common with them.__\
 \n\n• `.ungmute <username/reply>`\
 \nUsage: __Reply someone's message with .ungmute to remove them from the gmuted list.__\
 \n\n• `.kick`\
