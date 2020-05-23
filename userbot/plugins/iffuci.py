@@ -7,7 +7,7 @@ from datetime import datetime
 import os
 import requests
 from userbot.utils import admin_cmd
-
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 def progress(current, total):
     logger.info("Downloaded {} of {}\nCompleted {}".format(current, total, (current / total) * 100))
@@ -53,3 +53,15 @@ async def _(event):
         await event.edit("code is pasted to {} in {} seconds. GoTo Original URL: {}".format(url, ms, nurl))
     else:
         await event.edit("code is pasted to {} in {} seconds".format(url, ms))
+
+
+MODULE_LIST.append("iffuci")
+SYNTAX.update({
+    "iffuci": "\
+**IFFUCI is website to store long codes as links.**\
+\nThis is a very useful module.\
+\n\n• `.iffuci <text>\
+\nUsage: __Limit for the text is like infinity. This module will give you a link on which your text is stored.__\
+\n\nUseful for storing large changelogs or important codes. But don't delete the link.\
+"
+})
