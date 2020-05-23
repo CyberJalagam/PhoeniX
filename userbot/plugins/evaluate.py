@@ -11,6 +11,7 @@ import asyncio
 import sys
 import io
 from uniborg.util import admin_cmd
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 
 @borg.on(admin_cmd("evaluate", allow_sudo=True))
@@ -74,3 +75,12 @@ async def aexec(code, event):
         ''.join(f'\n {l}' for l in code.split('\n'))
     )
     return await locals()['__aexec'](event)
+
+MODULE_LIST.append("evaluate")
+SYNTAX.update({
+    "evaluate": "\
+**Requested Module --> Evaluate Python Code**\
+\n\n• `.evaluate` <python code>\
+\nUsage: __Evaluates a python code for syntax errors and gives a detail of the error.__\
+"
+})
