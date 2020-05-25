@@ -10,6 +10,7 @@ import asyncio
 import os
 import sys
 from userbot.utils import admin_cmd
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 
 @borg.on(admin_cmd("restart"))
@@ -17,11 +18,11 @@ async def _(event):
     if event.fwd_from:
         return
     # await asyncio.sleep(2)
-    # await event.edit("Restarting [██░] ...\n`.ping` me or `.help` to check if I am online after a lil bit.")
+    # await event.edit("Restarting [██░] ...\n`.ping` or `.alive` to check if I am alive after a lil bit.")
     # await asyncio.sleep(2)
-    # await event.edit("Restarting [███]...\n`.ping` me or `.help` to check if I am online after a lil bit.")
+    # await event.edit("Restarting [███]...\n`.ping` or `.alive` to check if I am alive after a lil bit.")
     # await asyncio.sleep(2)
-    await event.edit("Restarted. `.ping` me or `.helpme` to check if I am online")
+    await event.edit("Restarted. Use `.ping` or `.alive` to check if I am alive")
     await borg.disconnect()
     # https://archive.is/im3rt
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -35,3 +36,14 @@ async def _(event):
         return
     await event.edit("Turning off ...Manually turn me on later")
     await borg.disconnect()
+
+MODULE_LIST.append("PhoeniX Tools")
+SYNTAX.update({
+    "PhoeniX Tools": "\
+**Requested Module --> PhoeniX Developer Tools**\
+\n\n• `.restart`\
+\nUsage: __Restarts the bot. Takes 2 mins__\
+\n\n• `.shutdown`\
+\nUsage: __Shut downs the bot.__\
+"
+})
