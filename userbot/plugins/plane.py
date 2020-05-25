@@ -24,7 +24,7 @@ async def _(event):
     await event.edit("----------✈---")
     await event.edit("-----------✈--")
     await event.edit("------------✈-")
-    await event.edit("-------------✈")
+    await event.edit("The plane lost. __It was trying to cross Bermuda Triangle__")
     await asyncio.sleep(3)
     await event.delete()
 
