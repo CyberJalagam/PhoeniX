@@ -1,5 +1,5 @@
 """Get Telegram Profile Picture and other information
-Syntax: .whois @username"""
+Syntax: .info @username"""
 
 import html
 from telethon.tl.functions.photos import GetUserPhotosRequest
@@ -7,9 +7,10 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from userbot.utils import admin_cmd
+from sql.global_variables_sql import SYNTAX, MODULE_LIST
 
 
-@borg.on(admin_cmd("whois ?(.*)"))
+@borg.on(admin_cmd("info ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -46,16 +47,16 @@ async def _(event):
     except Exception as e:
         dc_id = "Need a Profile Picture to check **this**"
         location = str(e)
-    caption = """Extracted Userdata From Anubis' DATABASE
+    caption = """Imported this User's data from Telegram HQ
 ID: <code>{}</code>
-Rendi's Name: <a href='tg://user?id={}'>{}</a>
+Name: <a href='tg://user?id={}'>{}</a>
 Bio: {}
 DC ID: {}
 Number of PPs: {}
 Restricted? : {}
 Verified gey: {}
-Bot(nub): {}
-Groups in Common with this gey: {}
+Bot: {}
+Groups in Common with this user: {}
 """.format(
         user_id,
         user_id,
@@ -136,3 +137,11 @@ async def get_full_user(event):
                 return replied_user, None
             except Exception as e:
                 return None, e
+
+MODULE_LIST.append("about user")
+SYNTAX.update({
+**Requested Module --> About User**\
+\n\n• `.info @username`\
+\nUsage: __Gives whole information about a user__\
+"
+})
