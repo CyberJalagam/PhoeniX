@@ -140,6 +140,7 @@ async def get_full_user(event):
 
 MODULE_LIST.append("about user")
 SYNTAX.update({
+    "about user": "\
 **Requested Module --> About User**\
 \n\n• `.info @username`\
 \nUsage: __Gives whole information about a user__\
