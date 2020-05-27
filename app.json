@@ -1,10 +1,11 @@
 {
-  "name": "PhoeniX",
-  "description": "Userbot created by mpSinGH\n\n PM @HawkEyesMohak for any query",
+  "name": "PhoeniX-Vanilla",
+  "description": "Userbot created by mpSinGH\n\nPM @HawkEyesMohak for any query",
   "logo": "https://telegra.ph/file/89bbe21a64228a8d7625b.jpg",
   "keywords": [
     "telegram",
     "userbot",
+    "bot"
     "plugin",
     "modules",
     "phoenix"
@@ -55,7 +56,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: Total-Noob/Phoenix, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: Techy05/Phoenix, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },
@@ -67,7 +68,7 @@
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the token of your bot. Worth it. Get it.",
       "value": "",
-      "required": true
+      "required": false
     },
     "CHROME_BIN": {
       "description": "For Carbon.py. Leave as it is. ",
@@ -82,7 +83,7 @@
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the username of your bot",
       "value": "",
-      "required": true
+      "required": false
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
