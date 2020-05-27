@@ -21,8 +21,8 @@ ERROR.update({
     "updater not working": "\
 **So, you're having problems with updater. PhoeniX Service will fix it.**\
 \n\nERROR: `Unfortunately, the directory /app does not seem to be a git repository.`\
-\nSolution: __Use ".update now" and check again if it works.__\
-\n__If it still doesn't work, then use ".chl" once.\
+\nSolution: __Use “.update now” and check again if it works.__\
+\n__If it still doesn't work, then use “.chl” once.\
 \n\nERROR: `[UPDATER]: Looks like you are using your own custom branch (master). in that case, Updater is unable to identify which branch is to be merged. please checkout to any official branch`\
 \nSolution: __Delete PhoeniX repo from your account. Refork__ [PhoeniX](https://github.com/Techy05/PhoeniX). __Then Manual Deploy from Heroku to fix__\
 \nIf you use custom fork, then please don't mess with branches.\
