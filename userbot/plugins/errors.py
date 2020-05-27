@@ -1,3 +1,4 @@
+# Exclusive for PhoeniX
 # Credits --> @authoritydmc and Priyam Kalra and @HawkEyesMohak
 # A dictionary of errors. With solutions ofc.
 # Syntax (.errors)
