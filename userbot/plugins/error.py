@@ -1,5 +1,5 @@
-# Ported from Priyam's The TG Bot 2.0
-# A clean and beautiful alternative to .help
+# Exclusive module for PhoeniX
+# By @Techy05
 # Syntax (.error <error_name>)
 from telethon import events
 from userbot.utils import admin_cmd
