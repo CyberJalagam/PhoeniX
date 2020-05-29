@@ -26,5 +26,5 @@ async def _(event):
             erros += f"\n\t{err[0].upper()}\n"
         erros += f"-  ```{err}```\n"
         prev = err
-    erros += f"\n\n__Number of solutions loaded:__ {num}\n**Tip:** Use .error <error_name> for more info."
+    erros += f"\n\n__Number of solutions loaded:__ {num}\n**Tip:** Use .solution <error_name> for more info."
     await event.edit(erros)
