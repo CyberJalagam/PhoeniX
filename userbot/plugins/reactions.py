@@ -148,6 +148,7 @@ SYNTAX.update({
 \n mf  __(Middle Finger)__\
 \n dislike  __(I hate it, boo)__\
 \n chess  __(Try playing chess!)__\
+\n music  __(Play some music and cool down)__\
 \n shitos  __(Official logo for ShitOS)__ :P\
 \n qrcode  __(Scan the QR Code from the UPI app)__\
 \n youjoined  __(You joined? I.... :)__\
