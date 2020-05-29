@@ -52,7 +52,7 @@ async def _(event):
             "Telegram HQ: `Hello This is Telegram HQ. Who is this?`",
             "Telegram HQ: `Hello This is Telegram HQ. Who is this?`\n\nmpSinGH: `Yo this is` @HawkEyesMohak",
             "Telegram HQ: `Oh Hello Peru Sir!! I Know You Are The Creator Of The Awesome PhoeniX Userbot. How May I Help You?`",
-            f"Telegram HQ: `Oh Hello Peru Sir!! I Know You Are The Creator Of The Awesome PhoeniX Userbot. How May I Help You?`\n\nmpSinGH: `Hello Sir, Please Ban {BOSS}'s Telegram Account.`",    
+            f"Telegram HQ: `Oh Hello Peru Sir!! I Know You Are The Creator Of The Awesome PhoeniX Userbot. How May I Help You?`\n\nmpSinGH: `Hello Sir, Please Ban` {BOSS}'s `Telegram Account.`",    
             "Telegram HQ: `May I Know What Did He Do?`",
             "Telegram HQ: `May I Know What Did He Do?`\n\nmpSinGH: `He tried to use the forbidden .call command and tried connecting to DarkWEB`",
             "Telegram HQ: `OMG!!! I'll Make Sure That Guy Account Will Get Banned From Telegram Within 24Hrs.`",
