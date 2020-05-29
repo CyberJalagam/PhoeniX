@@ -68,7 +68,7 @@
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
       "value": "",
-      "required": false
+      "required": true
     },
     "HEROKU_APP_NAME": {
       "description": "Needed for updater and some other plugins to work. It is same as the app name entered at the top.",
@@ -93,7 +93,7 @@
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the username of your bot",
       "value": "",
-      "required": false
+      "required": true
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
