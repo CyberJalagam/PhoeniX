@@ -1,5 +1,7 @@
-# Exclusive for PhoeniX
-# Credits --> @authoritydmc and Priyam Kalra and @HawkEyesMohak
+# Exclusive for PhoeniX only
+# By @Techy05
+# Credits --> @authoritydmc and Priyam Kalra
+# You should not use this module without proper credits
 # A dictionary of errors. With solutions ofc.
 # Syntax (.errors)
 
