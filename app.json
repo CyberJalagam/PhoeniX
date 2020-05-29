@@ -1,15 +1,15 @@
 {
   "name": "PhoeniX",
-  "description": "Userbot created by a SNAPDRAGON and custom fork by ANUBIS\n\n join https://t.me/XtraTgChat for any problems or support",
-  "logo": "https://telegra.ph/file/1be6c59f53fef57b5745b.jpg",
+  "description": "Userbot created by mpSinGH. A superb userbot.\n\n Join https://t.me/XtraPhoeniXDeOXy for any problems or support",
+  "logo": "https://telegra.ph/file/89bbe21a64228a8d7625b.jpg",
   "keywords": [
     "telegram",
     "userbot",
     "plugin",
-    "modular",
-    "productivity"
+    "modules",
+    "phoenix"
   ],
-  "repository": "https://github.com/Dark-Princ3/X-tra-Telegram/",
+  "repository": "https://github.com/Techy05/PhoeniX/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -36,8 +36,8 @@
       "required": true
     },
     "MAX_FLOOD_IN_P_M_s": {
-      "description": "Maximum number of messages a person can send in pm before getting blocked. Value must be an integer. 3 by default.",
-      "value": "3",
+      "description": "Maximum number of messages a person can send in pm before getting blocked. Value must be an integer. 4 by default.",
+      "value": "4",
       "required": false
     },
     "OCR_SPACE_API_KEY": {
