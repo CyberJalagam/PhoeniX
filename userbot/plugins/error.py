@@ -5,7 +5,7 @@ from telethon import events
 from userbot.utils import admin_cmd
 import asyncio
 from telethon.tl import functions, types
-from sql.global_variables_sql import SYNTAX, MODULE_LIST, ERROR, ERRORS
+from sql.global_variables_sql import SYNTAX, MODULE_LIST, ERROR, ERROR_LIST
 
 
 MODULE_LIST.append("error")
