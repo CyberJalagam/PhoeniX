@@ -1,7 +1,7 @@
 # Exclusive module for PhoeniX
 # By @Techy05
 # You should use this module without proper credits
-# Syntax (.error <error_name>)
+# Syntax (.solution <error_name>)
 from telethon import events
 from userbot.utils import admin_cmd
 import asyncio
