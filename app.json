@@ -35,6 +35,11 @@
       "value": "",
       "required": true
     },
+    "ALIVE_NAME": {
+      "description": "Enter your name here. This name will be used all around the userbot to make it more personalised",
+      "value": "",
+      "required": true
+    },
     "MAX_FLOOD_IN_P_M_s": {
       "description": "Maximum number of messages a person can send in pm before getting blocked. Value must be an integer. 4 by default.",
       "value": "4",
