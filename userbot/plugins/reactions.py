@@ -23,7 +23,7 @@ emojis = {
     "sad": "⊙︿⊙",
     "lenny": "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)",
     "idc": "¯\_(ツ)_/¯",
-    "f": "😂😂😂😂😂😂😂😂\n😂😂😂😂😂😂😂😂😂\n😂😂\n😂😂\n😂😂😂😂😂😂\n😂😂😂😂😂😂\n😂😂\n😂😂\n😂😂\n😂😂\n😂😂"
+    "f": "😂😂😂😂😂😂😂😂\n😂😂😂😂😂😂😂😂\n😂😂\n😂😂\n😂😂😂😂😂😂\n😂😂😂😂😂😂\n😂😂\n😂😂\n😂😂\n😂😂\n😂😂"
 }
 
 unpacked_emojis = ""
@@ -91,7 +91,7 @@ async def _(event):
     await event.edit(":/")
 
 
-@borg.on(admin_cmd(pattern="emoji ?(.*)"))
+@borg.on(admin_cmd(pattern="emo ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -131,7 +131,7 @@ SYNTAX.update({
     "emojis": f"\
 **Requested Module --> emojis**\
 \n\n**Detailed usage of fuction(s):**\
-\n\n• .emoji `<emoji_name>`\
+\n\n• .emo `<emoji_name>`\
 \nUsage: __Prints the target emoji.__\
 \n\nList of included emoji(s):\
 \n{unpacked_emojis}\
