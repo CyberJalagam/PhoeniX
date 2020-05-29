@@ -1,5 +1,6 @@
 # Exclusive module for PhoeniX
 # By @Techy05
+# You should use this module without proper credits
 # Syntax (.error <error_name>)
 from telethon import events
 from userbot.utils import admin_cmd
@@ -8,9 +9,9 @@ from telethon.tl import functions, types
 from sql.global_variables_sql import SYNTAX, MODULE_LIST, ERROR, ERROR_LIST
 
 
-MODULE_LIST.append("error")
+MODULE_LIST.append("solution")
 
-@borg.on(admin_cmd(pattern="error ?(.*)"))
+@borg.on(admin_cmd(pattern="solution ?(.*)"))
 async def _(event):
         if event.fwd_from:
             return
