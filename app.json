@@ -1,16 +1,15 @@
 {
-  "name": "PhoeniX-Vanilla",
-  "description": "Userbot created by mpSinGH\n\nPM @HawkEyesMohak for any query",
-  "logo": "https://telegra.ph/file/89bbe21a64228a8d7625b.jpg",
+  "name": "PhoeniX",
+  "description": "Userbot created by a SNAPDRAGON and custom fork by ANUBIS\n\n join https://t.me/XtraTgChat for any problems or support",
+  "logo": "https://telegra.ph/file/1be6c59f53fef57b5745b.jpg",
   "keywords": [
     "telegram",
     "userbot",
-    "bot"
     "plugin",
-    "modules",
-    "phoenix"
+    "modular",
+    "productivity"
   ],
-  "repository": "https://github.com/Techy05/PhoeniX/",
+  "repository": "https://github.com/Dark-Princ3/X-tra-Telegram/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -24,20 +23,21 @@
       "required": false
     },
     "APP_ID": {
-      "description": "Get this value from my.telegram.org!",
+      "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org!",
+      "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
     },
     "STRING_SESSION": {
       "description": "Get this value by running python3 telesetup.py locally",
-      "value": ""
+      "value": "",
+      "required": true
     },
     "MAX_FLOOD_IN_P_M_s": {
       "description": "Maximum number of messages a person can send in pm before getting blocked. Value must be an integer. 3 by default.",
-      "value": "4",
+      "value": "3",
       "required": false
     },
     "OCR_SPACE_API_KEY": {
@@ -56,7 +56,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: Techy05/Phoenix, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: Total-Noob-69/X-Tra-Telegram, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },
@@ -66,7 +66,17 @@
       "required": false
     },
     "TG_BOT_TOKEN_BF_HER": {
-      "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the token of your bot. Worth it. Get it.",
+      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Needed for updater and some other plugins to work. It is same as the app name entered at the top.",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Needed for updater and some other plugins to work. Get this from https://dashboard.heroku.com/account at the bottom.",
       "value": "",
       "required": false
     },
@@ -81,7 +91,7 @@
       "required": false
     },
     "TG_BOT_USER_NAME_BF_HER": {
-      "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the username of your bot",
+      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the username of your bot",
       "value": "",
       "required": false
     },
