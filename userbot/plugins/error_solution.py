@@ -17,9 +17,9 @@ async def _(event):
             return
         err = event.pattern_match.group(1)
         if err:
-            if err in ERROR_LIST:
-                await event.edit(ERROR_LIST[err])
+            if err in ERROR:
+                await event.edit(ERROR[err])
             else:
-                await event.edit("Please specify a real error.")
+                await event.edit("No information for this error yet!\n**Tip: Get a list of all errors using .errors**")
         else:
             await event.edit("Please specify an error.\n**Tip: Get a list of all errors using .errors**")
