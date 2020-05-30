@@ -15,10 +15,14 @@ Raphielgang/Paperplane
 
 @Dark-Princ3/X-tra-Telegram
 
-I took some plugins from @Hack12R/HardcoreUserbot. I don't know who is their owner. If you know you can tell me at @HawkEyesMohak\n
-And some collaborators/testers :-)\n
+
+I took some plugins from @Hack12R/HardcoreUserbot. I don't know who is their owner. If you know you can tell me at @HawkEyesMohak
+
+### And some collaborators/testers :-)
 
 @JAISHNAVPRASAD-Darklious
+
 @blacklytning
+
 
 As I told above, this project is still incomplete. I may have missed some credits. I'll add them later.
