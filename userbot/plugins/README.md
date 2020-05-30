@@ -8,12 +8,16 @@ If use these plugins, then it is at your own risk. Don't blame me if you get ban
 ## You are free to use any of these plugins, modify them or do anything. But you should not mess with credits. Leave them as they are. You may get reported for not giving proper credits.
 
 # Credits:
-Raphielgang/Paperplane \n
-@SpEcHiDe/Uniborg\n
-@Dark-Princ3/X-tra-Telegram\n\n
+
+Raphielgang/Paperplane
+
+@SpEcHiDe/Uniborg
+
+@Dark-Princ3/X-tra-Telegram
 
 I took some plugins from @Hack12R/HardcoreUserbot. I don't know who is their owner. If you know you can tell me at @HawkEyesMohak\n
 And some collaborators/testers :-)\n
+
 @JAISHNAVPRASAD-Darklious
 @blacklytning
 
