@@ -23,7 +23,8 @@ emojis = {
     "sad": "⊙︿⊙",
     "lenny": "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)",
     "idc": "¯\_(ツ)_/¯",
-    "f": "😂😂😂😂😂😂😂😂\n😂😂😂😂😂😂😂😂\n😂😂\n😂😂\n😂😂😂😂😂😂\n😂😂😂😂😂😂\n😂😂\n😂😂\n😂😂\n😂😂\n😂😂"
+    "f": "😂😂😂😂😂😂😂😂\n😂😂😂😂😂😂😂😂\n😂😂\n😂😂\n😂😂😂😂😂😂\n😂😂😂😂😂😂\n😂😂\n😂😂\n😂😂\n😂😂\n😂😂",
+    "hi": "🌸           🌸      🌺🌸🌺\n🌺           🌺           🌺\n🌸🌺🌺🌸           🌸\n🌺           🌺           🌺\n🌸           🌸     🌺🌸🌺"
 }
 
 unpacked_emojis = ""
@@ -151,6 +152,6 @@ SYNTAX.update({
 \n music  __(Play some music and cool down)__\
 \n shitos  __(Official logo for ShitOS)__ :P\
 \n qrcode  __(Scan the QR Code from the UPI app)__\
-\n youjoined  __(You joined? I.... :)__\
+\n youjoined  __(When you joined, Me .... :)__\
 "
 })
